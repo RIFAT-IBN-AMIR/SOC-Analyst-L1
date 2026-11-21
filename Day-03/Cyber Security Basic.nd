@@ -1,1 +1,797 @@
+Day-03- Cybersecurity Fundamentals
 
+# 1. Threat, Vulnerability, and Risk
+
+## 1.1 Threat
+
+A threat is any potential danger, event, or incident that can cause harm to computer systems, networks, software, or data.
+
+**Examples:**
+- Hackers
+- Malware
+- Phishing attacks
+- Insider attacks
+
+## 1.2 Vulnerability
+
+A vulnerability is a weakness in software, hardware, or a system that an attacker can exploit.
+
+**Examples:**
+- Outdated software
+- Weak passwords
+- Unpatched operating systems
+- Misconfigured servers
+
+## 1.3 Risk
+
+Risk is the possibility of loss or damage when a threat exploits a vulnerability.
+
+**Example:**
+
+An organization has an unpatched server. An attacker exploits this weakness and steals confidential information.
+
+- Threat: Attacker
+- Vulnerability: Unpatched server
+- Risk: Data theft
+
+---
+
+# 2. Common Cybersecurity Domains
+
+Cybersecurity consists of several important domains.
+
+## 2.1 Network Security
+
+Protects computer networks from unauthorized access, attacks, and malicious traffic.
+
+**Examples:**
+- Firewalls
+- IDS/IPS
+- Network Monitoring
+
+## 2.2 Application Security
+
+Protects applications from security vulnerabilities and attacks.
+
+**Examples:**
+- Secure Coding
+- Input Validation
+- Security Testing
+
+## 2.3 Endpoint Security
+
+Protects endpoint devices such as computers, laptops, and servers.
+
+**Examples:**
+- Antivirus
+- EDR
+- Endpoint Monitoring
+
+## 2.4 Cloud Security
+
+Protects cloud-based infrastructure, applications, and data.
+
+**Examples:**
+- AWS Security
+- Access Control
+- Cloud Monitoring
+
+## 2.5 IAM – Identity and Access Management
+
+Controls user identities and access permissions to systems and resources.
+
+**Examples:**
+- Multi-Factor Authentication (MFA)
+- Role-Based Access Control (RBAC)
+- User Authentication
+
+## 2.6 Security Operations
+
+Monitors, detects, investigates, and responds to cybersecurity threats.
+
+**Examples:**
+- SOC Monitoring
+- SIEM
+- Incident Response
+
+---
+
+# 3. CIA Triad
+
+The CIA Triad is a fundamental information security model consisting of three principles.
+
+## 3.1 Confidentiality
+
+Ensures that information is accessible only to authorized users.
+
+**Example:** Only authorized employees can access customer information.
+
+## 3.2 Integrity
+
+Ensures that information remains accurate and is not modified without authorization.
+
+**Example:** An attacker changes a customer's bank balance without permission.
+
+## 3.3 Availability
+
+Ensures that systems and information are available when authorized users need them.
+
+**Example:** A DDoS attack makes a company's website unavailable.
+
+---
+
+# 4. Common Cyber Threats
+
+## 4.1 Malware
+
+Malware is malicious software designed to damage, disrupt, steal information, or gain unauthorized access to systems.
+
+**Common Types:**
+- Ransomware
+- Trojan
+- Spyware
+- Virus
+- Worm
+
+## 4.2 Phishing
+
+Phishing is a social engineering attack in which attackers use fake emails, messages, or websites to trick users into revealing sensitive information.
+
+**Example:** A fake bank email asks users to enter their login credentials.
+
+## 4.3 Insider Threat
+
+An insider threat occurs when someone inside an organization causes security risks by intentionally or accidentally misusing authorized access.
+
+**Example:** An employee copies confidential customer information to a USB drive without authorization.
+
+## 4.4 Advanced Persistent Threat (APT)
+
+An APT is a sophisticated, targeted cyberattack in which an attacker maintains unauthorized access to a system for an extended period.
+
+**Example:** Attackers secretly access a government organization's network to steal sensitive information over several months.
+
+---
+
+# 5. Common Attack Types
+
+## 5.1 Brute Force Attack
+
+An attacker repeatedly tries different username and password combinations to gain unauthorized access.
+
+**Example:** Trying thousands of password combinations against an account.
+
+## 5.2 Distributed Denial of Service (DDoS)
+
+A DDoS attack uses multiple compromised devices to overwhelm a target system or network with traffic, making its services unavailable.
+
+**Example:** A company's website becomes unavailable because of massive malicious traffic.
+
+## 5.3 SQL Injection (SQLi)
+
+SQL Injection is an attack in which malicious SQL statements are inserted into application input fields to manipulate database queries.
+
+**Example:** An attacker exploits an insecure login form to access unauthorized database information.
+
+## 5.4 Zero-Day Attack
+
+A Zero-Day Attack exploits a software vulnerability before the vendor has released an effective security patch or fix.
+
+**Example:** Attackers exploit a newly discovered browser vulnerability before a security update is available.
+
+---
+
+# 6. Case Study – WannaCry Ransomware
+
+WannaCry was a ransomware attack that encrypted files on infected Windows computers and demanded ransom payments.
+
+## How WannaCry Worked
+
+1. The malware infected vulnerable Windows systems.
+2. It exploited the EternalBlue vulnerability.
+3. It encrypted files on infected computers.
+4. It displayed a ransom message.
+5. Victims were asked to pay approximately $300 in Bitcoin.
+6. The ransom demand could increase after a deadline.
+
+## Important Characteristics
+
+- Files were encrypted.
+- Victims were asked to pay Bitcoin.
+- The ransom demand included a deadline.
+- The attack affected organizations worldwide.
+
+---
+
+# 7. WannaCry History
+
+WannaCry spread globally in May 2017.
+
+## Important Facts
+
+- Date: May 2017
+- Affected systems: More than 300,000 computers
+- Affected countries: Approximately 150 countries
+- Main target: Vulnerable Windows systems
+- Exploit: EternalBlue
+- Payment method: Bitcoin
+
+## Other Names
+
+WannaCry was also known as:
+
+- WannaCrypt
+- WCry
+- Wana DecryptOr 2.0
+- WanaCryptOr 2.0
+- Wanna Decryptor
+
+## What is EternalBlue?
+
+EternalBlue is an exploit that targets a vulnerability in Microsoft's SMBv1 protocol.
+
+It was used by WannaCry to spread between vulnerable Windows computers.
+
+**Security Lesson:**
+
+Regular security updates and disabling outdated protocols can help prevent similar attacks.
+
+---
+
+# 8. Case Study – Twitter/X Bitcoin Scam
+
+In July 2020, Twitter experienced a major security incident involving compromised high-profile accounts.
+
+## How the Attack Worked
+
+1. Attackers gained unauthorized access to several high-profile Twitter accounts.
+2. They posted fake Bitcoin giveaway messages.
+3. The messages promised to double the Bitcoin sent to a specific wallet.
+4. Users were tricked into sending Bitcoin.
+5. The attackers collected the cryptocurrency.
+
+## Important Lessons
+
+- Do not trust unrealistic financial promises.
+- Verify information before sending money.
+- Protect accounts using MFA.
+- Monitor suspicious account activities.
+- Secure administrative access.
+
+---
+
+# 9. Cyber Kill Chain
+
+The Cyber Kill Chain is a security model that describes the stages attackers may follow during a cyberattack.
+
+It helps security analysts understand and detect attacks at different stages.
+
+## Seven Stages
+
+### 1. Reconnaissance
+
+Attackers collect information about their target.
+
+**Examples:**
+- Finding employee email addresses.
+- Identifying public-facing servers.
+- Researching the organization's network.
+
+### 2. Weaponization
+
+Attackers prepare malicious tools or payloads for the attack.
+
+**Examples:**
+- Creating a malicious document.
+- Preparing malware.
+
+### 3. Delivery
+
+Attackers deliver the malicious payload to the target.
+
+**Examples:**
+- Sending a phishing email.
+- Delivering a malicious attachment.
+
+### 4. Exploitation
+
+Attackers exploit a vulnerability or trick a user into executing malicious content.
+
+**Example:** Exploiting an unpatched application.
+
+### 5. Installation
+
+Malware or other malicious tools are installed on the compromised system.
+
+**Example:** Installing a backdoor.
+
+### 6. Command and Control (C2)
+
+The compromised system communicates with attacker-controlled infrastructure.
+
+**Example:** Malware connects to a remote command server.
+
+### 7. Actions on Objectives
+
+Attackers perform their final objectives.
+
+**Examples:**
+- Stealing confidential data.
+- Encrypting files.
+- Disrupting services.
+
+---
+
+# 10. Defense-in-Depth
+
+Defense-in-Depth is a cybersecurity strategy that uses multiple layers of security controls to protect systems, networks, and data.
+
+If one security layer fails, other layers can still help prevent or limit an attack.
+
+## Six Security Layers
+
+### 1. Perimeter Security
+
+Protects the organization's external network boundary.
+
+**Examples:**
+- Firewalls
+- VPNs
+- Proxies
+
+### 2. Network Security
+
+Protects internal network communication and traffic.
+
+**Examples:**
+- Network Segmentation
+- Network Monitoring
+- IDS/IPS
+
+### 3. Endpoint Security
+
+Protects computers, laptops, and servers.
+
+**Examples:**
+- Antivirus
+- EDR
+- Endpoint Protection
+
+### 4. Application Security
+
+Protects applications from vulnerabilities and attacks.
+
+**Examples:**
+- Secure Coding
+- Application Testing
+- Access Control
+
+### 5. Data Security
+
+Protects sensitive information from unauthorized access or modification.
+
+**Examples:**
+- Data Encryption
+- Access Control
+- Data Protection
+
+### 6. Human Security
+
+Reduces security risks caused by human mistakes or social engineering.
+
+**Examples:**
+- Security Awareness Training
+- Phishing Awareness
+- Employee Education
+
+---
+
+# 11. Network Security Basics
+
+Network security protects network infrastructure, communication, and data from unauthorized access and cyberattacks.
+
+## 11.1 IP Address
+
+An IP address is a logical address used to identify a device on an IP network.
+
+**Example:** 192.168.1.10
+
+## 11.2 Port
+
+A port identifies a specific communication endpoint or service on a device.
+
+**Common Ports:**
+
+| Port | Service |
+|---|---|
+| 20/21 | FTP |
+| 22 | SSH |
+| 23 | Telnet |
+| 25 | SMTP |
+| 53 | DNS |
+| 80 | HTTP |
+| 443 | HTTPS |
+| 3389 | RDP |
+
+## 11.3 Protocol
+
+A protocol is a set of rules that allows devices to communicate over a network.
+
+**Examples:**
+- TCP
+- UDP
+- HTTP
+- HTTPS
+- DNS
+- FTP
+
+## 11.4 Firewall
+
+A firewall monitors and controls network traffic based on predefined security rules.
+
+## 11.5 IDS – Intrusion Detection System
+
+An IDS monitors network or system activities and detects suspicious behavior.
+
+It generates alerts when potential threats are detected.
+
+## 11.6 IPS – Intrusion Prevention System
+
+An IPS detects suspicious activity and can automatically block or prevent malicious traffic.
+
+## 11.7 Network Segmentation
+
+Network segmentation divides a network into smaller sections to improve security and control access.
+
+**Example:**
+
+Separating the HR, Finance, and IT departments into different network segments.
+
+**Security Benefit:**
+
+If one segment is compromised, segmentation can help prevent attackers from moving freely to other network areas.
+
+---
+
+# 12. Endpoint Security Basics
+
+Endpoint security protects devices connected to an organization's network.
+
+## 12.1 Antivirus
+
+Antivirus software detects, blocks, and removes known malware and other malicious files.
+
+## 12.2 EDR – Endpoint Detection and Response
+
+EDR continuously monitors endpoint activities to detect suspicious behavior, investigate threats, and support incident response.
+
+**Examples of EDR Activities:**
+- Process monitoring
+- Suspicious behavior detection
+- Endpoint investigation
+- Threat containment
+
+## 12.3 System Hardening
+
+Hardening means reducing security weaknesses by configuring systems securely.
+
+**Examples:**
+- Disabling unnecessary services.
+- Removing unused software.
+- Applying strong security configurations.
+- Restricting unnecessary permissions.
+
+## 12.4 Patching
+
+Patching means installing software updates to fix vulnerabilities, bugs, and security issues.
+
+**Example:** Installing a Windows security update to fix a known vulnerability.
+
+---
+
+# 13. Email and Web Security
+
+Email and web security protect users from phishing, malicious websites, and dangerous downloads.
+
+## 13.1 Phishing Detection
+
+Identifying suspicious emails and messages that attempt to steal information or deliver malware.
+
+**Warning Signs:**
+- Unknown senders.
+- Suspicious links.
+- Unexpected attachments.
+- Urgent requests for personal information.
+- Fake login pages.
+
+## 13.2 URL Filtering
+
+URL filtering blocks access to malicious, suspicious, or unauthorized websites.
+
+**Example:** Blocking a known phishing website.
+
+## 13.3 Sandboxing
+
+Sandboxing runs suspicious files or programs in an isolated environment to observe their behavior safely.
+
+**Example:** An analyst analyzes a suspicious email attachment in a sandbox instead of opening it on a normal computer.
+
+---
+
+# 14. What is a SIEM?
+
+SIEM stands for Security Information and Event Management.
+
+A SIEM is a centralized security platform that collects, analyzes, and correlates log data from multiple sources to identify suspicious activities and generate security alerts.
+
+## Main Functions
+
+### 1. Log Collection
+
+Collects logs from different systems and devices.
+
+### 2. Log Analysis
+
+Analyzes collected security events.
+
+### 3. Event Correlation
+
+Connects related events to identify suspicious patterns.
+
+### 4. Alert Generation
+
+Generates alerts when suspicious activities or predefined rules are detected.
+
+### 5. Security Monitoring
+
+Helps security analysts monitor organizational environments.
+
+## Common SIEM Tools
+
+- Splunk
+- Microsoft Sentinel
+- IBM QRadar
+
+---
+
+# 15. Common Log Sources
+
+Logs record activities and events occurring in systems, networks, and applications.
+
+SOC analysts use logs to investigate suspicious activities.
+
+## 15.1 Windows Logs
+
+Windows logs provide information about operating system activities.
+
+**Examples:**
+- User login attempts.
+- Failed login attempts.
+- Process creation.
+- Account activities.
+- System events.
+
+## 15.2 Firewall Logs
+
+Firewall logs record network traffic that is allowed or blocked by firewall rules.
+
+**Examples:**
+- Blocked connections.
+- Suspicious network traffic.
+- Port scanning attempts.
+- Unusual connections.
+
+## 15.3 DNS Logs
+
+DNS logs record domain name resolution activities.
+
+**Examples:**
+- Suspicious domain queries.
+- Connections to malicious domains.
+- Unusual DNS requests.
+
+## 15.4 VPN Logs
+
+VPN logs record remote access and connection activities.
+
+**Examples:**
+- User connection attempts.
+- Login timestamps.
+- Source IP addresses.
+- Unusual remote access locations.
+
+---
+
+# 16. Incident Detection and Triage
+
+Incident detection and triage are important SOC activities used to identify, validate, prioritize, and investigate security alerts.
+
+## Basic SOC L1 Workflow
+
+### Step 1: Alert Triggered
+
+A SIEM generates an alert based on suspicious activity.
+
+**Example:** Multiple failed login attempts.
+
+### Step 2: Alert Validation
+
+The SOC analyst checks whether the alert is legitimate or a false positive.
+
+### Step 3: Evidence Collection
+
+The analyst collects relevant information.
+
+**Examples:**
+- Source IP address.
+- Username.
+- Timestamp.
+- Event logs.
+- Affected system.
+
+### Step 4: Severity Assessment
+
+The analyst evaluates the severity and potential business impact.
+
+### Step 5: Escalation
+
+If the incident requires deeper investigation, the L1 analyst escalates it to the appropriate team, such as L2.
+
+### Step 6: Documentation
+
+The analyst documents the investigation, findings, and actions taken.
+
+---
+
+# 17. Common SOC Use Case Examples
+
+## 17.1 Brute Force Detection
+
+**Scenario:**
+
+A user account experiences many failed login attempts within a short period.
+
+**Possible Threat:**
+
+An attacker may be attempting to guess the user's password.
+
+**SOC L1 Investigation:**
+- Check failed login events.
+- Identify the source IP.
+- Check the affected username.
+- Review timestamps.
+- Determine whether the activity is suspicious.
+
+## 17.2 Phishing Alert
+
+**Scenario:**
+
+An employee reports a suspicious email.
+
+**SOC L1 Investigation:**
+- Check the sender address.
+- Inspect the email content.
+- Analyze suspicious URLs.
+- Check attachments safely.
+- Use security tools such as VirusTotal when appropriate.
+
+## 17.3 Geo-Login Alert
+
+**Scenario:**
+
+A user account logs in from an unusual geographical location.
+
+**Possible Threat:**
+
+The account may have been compromised.
+
+**SOC L1 Investigation:**
+- Check the source IP.
+- Review login timestamps.
+- Compare the location with normal user activity.
+- Check whether the user was traveling.
+- Escalate suspicious activity when necessary.
+
+---
+
+# 18. Cybersecurity Best Practices
+
+## 18.1 Strong Passwords
+
+Use long, unique passwords for different accounts.
+
+## 18.2 Multi-Factor Authentication (MFA)
+
+Use additional authentication factors to protect accounts.
+
+## 18.3 Regular Software Updates
+
+Keep operating systems and applications updated to fix known vulnerabilities.
+
+## 18.4 Avoid Public Wi-Fi for Sensitive Access
+
+Avoid accessing sensitive accounts through untrusted public Wi-Fi networks.
+
+## 18.5 Antivirus and Firewall
+
+Use security software and firewall protection to reduce malware and unauthorized access risks.
+
+## 18.6 Security Awareness Training
+
+Educate employees about phishing, suspicious links, social engineering, and safe security practices.
+
+---
+
+# 19. Assignment No. 1
+
+## Task 1: Malicious URL Analysis
+
+Use VirusTotal to analyze a suspicious or instructor-provided URL.
+
+**Objectives:**
+- Check security vendor detection results.
+- Identify suspicious domains.
+- Review URL reputation.
+- Understand possible security risks.
+
+## Task 2: WHOIS Lookup and IP Reputation Check
+
+Perform a WHOIS lookup and check IP reputation using appropriate security tools.
+
+**Objectives:**
+- Identify domain registration information.
+- Understand IP ownership and network information.
+- Review reputation and threat intelligence.
+- Identify suspicious indicators.
+
+## Task 3: Password Strength Analysis
+
+Use the following password security checker:
+
+https://password.kaspersky.com/
+
+**Objectives:**
+- Understand password strength.
+- Learn why weak passwords are dangerous.
+- Understand the importance of strong passwords.
+
+**Important Security Note:**
+
+Never submit your real password to an online password checker. Use only a dummy or test password.
+
+Do not upload private company URLs, confidential files, or sensitive information to public analysis platforms without authorization. Some submitted samples may become accessible to security researchers or other users.
+
+---
+
+# Day 3 – Key Learning Outcomes
+
+After completing Day 3, I learned:
+
+1. The differences between Threat, Vulnerability, and Risk.
+2. The major domains of cybersecurity.
+3. The three principles of the CIA Triad.
+4. Common cyber threats and attack types.
+5. The WannaCry ransomware incident and EternalBlue exploit.
+6. The 2020 Twitter/X Bitcoin scam.
+7. The seven stages of the Cyber Kill Chain.
+8. The Defense-in-Depth security strategy.
+9. Basic network security concepts.
+10. Endpoint security, Antivirus, EDR, and system hardening.
+11. Email and web security concepts.
+12. The purpose and functions of SIEM.
+13. Common security log sources.
+14. The basic SOC L1 incident detection and triage workflow.
+15. Common SOC detection use cases.
+16. Essential cybersecurity best practices.
+
+## Personal Learning Goal
+
+My goal is to build a strong foundation in cybersecurity and develop practical skills for a future career as a SOC Analyst / Blue Team Security Analyst.
+
+---
+
+**End of Day 3 – Cybersecurity Fundamentals**
+
+**GitHub file:** `Day-03-Cybersecurity-Fundamentals.md`
+
+এটি English Part। পরবর্তী Part-এ একই ১৯টি Section-এর সম্পূর্ণ Japanese Version থাকবে।
